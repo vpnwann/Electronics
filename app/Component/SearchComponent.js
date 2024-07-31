@@ -11,7 +11,7 @@ const SearchComponent = () => {
 
   useEffect(() => {
     if (searchTerm.trim() !== '') {
-      const dbRef = ref(database, '/'); // Root reference to search the whole database
+      const dbRef = ref(database, 'Ecom'); // Root reference to search the whole database
       onValue(dbRef, (snapshot) => {
         const data = snapshot.val();
         const filteredResults = [];

@@ -32,9 +32,9 @@ export default function Cart() {
             {cartItems.map((item) => (
               <div className="flex justify-between items-center" key={item.id}>
                 <div className="flex gap-4">
-                  <img src={item.image} alt={item.title} className="rounded-md h-24" />
+                  <img src={item.imgLink} alt={item.title} className="rounded-md h-24" />
                   <div className="flex flex-col">
-                    <h1 className=" text-sm font-bold">{item.title}</h1>
+                    <h1 className=" text-sm font-bold">{item.name}</h1>
                     <p className=" mt-6 font-extrabold"> &#x20b9;{item.price}</p>
                   </div>
                 </div>
